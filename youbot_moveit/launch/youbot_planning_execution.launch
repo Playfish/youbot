@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <arg name="sim" default="false" />
+  <arg name="limited" default="false"/>
+  <arg name="debug" default="false" />
+  <arg name="fake_execution" default="false"/>
+
+  <!-- Remap follow_joint_trajectory -->
+  <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_1/arm_controller/follow_joint_trajectory"/>
+
+  <!-- Launch moveit -->
+  <include file="$(find youbot_moveit)/launch/move_group.launch">
+    <arg name="fake_execution" value="$(arg fake_execution)"/>
+    <arg name="debug" value="$(arg debug)" />
+  </include>
+</launch>
+

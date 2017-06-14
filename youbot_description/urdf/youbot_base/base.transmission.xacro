@@ -10,80 +10,104 @@
 
 	<xacro:macro name="youbot_base_transmission">
 	<!-- front left wheel -->
-		<transmission name="wheel_trans_fl">
+    <transmission name="wheel_trans_fl">
       <type>transmission_interface/SimpleTransmission</type>
-			<actuator name="wheel_motor_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-			<joint name="wheel_joint_fl" />
-		</transmission>
+        <joint name="wheel_joint_fl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
 
-		<transmission name="caster_trans_fl">
+        <actuator name="wheel_motor_fl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
+
+    <transmission name="caster_trans_fl">
       <type>transmission_interface/SimpleTransmission</type>
-   	  <actuator name="caster_motor_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-      <joint name="caster_joint_fl" />
-    </transmission>
+        <joint name="caster_joint_fl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
+
+        <actuator name="caster_motor_fl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
 
 	  <!-- front right wheel -->
-	  <transmission name="wheel_trans_fr">
+    <transmission name="wheel_trans_fr">
       <type>transmission_interface/SimpleTransmission</type>
-		  <actuator name="wheel_motor_fr">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-		  <joint name="wheel_joint_fr" />
-	  </transmission>
+        <joint name="wheel_joint_fr">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
 
-	  <transmission name="caster_trans_fr">
+        <actuator name="wheel_motor_fr">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
+
+    <transmission name="caster_trans_fr">
       <type>transmission_interface/SimpleTransmission</type>
-      <actuator name="caster_motor_fr" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-    	<joint name="caster_joint_fr" />
-    </transmission>
+        <joint name="caster_joint_fr">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
+
+        <actuator name="caster_motor_fr">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
 
 	  <!-- back left wheel -->
-	  <transmission name="wheel_trans_bl">
+    <transmission name="wheel_trans_bl">
       <type>transmission_interface/SimpleTransmission</type>
-	    <actuator name="wheel_motor_bl" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-	    <joint name="wheel_joint_bl" />
-	  </transmission>
+        <joint name="wheel_joint_bl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
 
-	  <transmission name="caster_trans_bl">
+        <actuator name="wheel_motor_bl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
+
+    <transmission name="caster_trans_bl">
       <type>transmission_interface/SimpleTransmission</type>
-      <actuator name="caster_motor_bl" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-    	<joint name="caster_joint_bl" />
-    </transmission>
+        <joint name="caster_joint_bl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
+
+        <actuator name="caster_motor_bl">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
 
 	  <!-- back right wheel -->
-	  <transmission name="wheel_trans_br">
+    <transmission name="wheel_trans_br">
       <type>transmission_interface/SimpleTransmission</type>
-	    <actuator name="wheel_motor_br" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-		  <joint name="wheel_joint_br" />
-	  </transmission>
+        <joint name="wheel_joint_br">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
 
-	  <transmission name="caster_trans_br">
+        <actuator name="wheel_motor_br">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
+
+    <transmission name="caster_trans_br">
       <type>transmission_interface/SimpleTransmission</type>
-      <actuator name="caster_motor_br" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
-        <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
-      </actuator>
-    	<joint name="caster_joint_br" />
-    </transmission>
+        <joint name="caster_joint_br">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
+
+        <actuator name="caster_motor_br">
+          <hardwareInterface>VelocityJointInterface</hardwareInterface>
+          <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
+        </actuator>
+     </transmission>
 
   </xacro:macro>
 	
